@@ -24,8 +24,8 @@ public class Lab1Bai2 {
 		int chuVi = (chieuDai + chieuRong) * 2;
         int dienTich = chieuDai * chieuRong;
         
-		System.out.println("chu vi hinh chu nhat la " + (chieuDai+chieuRong)*2);
-		System.out.println("dien tich hinh chu nhat la " + chieuDai*chieuRong);
+		System.out.println("chu vi hinh chu nhat la " + chuVi);
+		System.out.println("dien tich hinh chu nhat la " + dienTich);
 	}
 
 }
