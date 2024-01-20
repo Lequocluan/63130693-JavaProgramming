@@ -16,19 +16,19 @@ public class Lab1Bai2 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner scanner = new Scanner(System.in);
-		System.out.print("nhap chieu dai: ");
+		System.out.print("nhập chiều dài: ");
 		int chieuDai=scanner.nextInt();
-		System.out.print("nhap chieu rong: ");
+		System.out.print("nhập chiều rộng: ");
 		int chieuRong=scanner.nextInt();
 		//tinh chu vi va dien tich rieng
 		int chuVi = (chieuDai + chieuRong) * 2;
         int dienTich = chieuDai * chieuRong;
         
-		System.out.println("chu vi hinh chu nhat la " + chuVi);
-		System.out.println("dien tich hinh chu nhat la " + dienTich);
+		System.out.println("chu vi của hình chữ nhật là: " + chuVi);
+		System.out.println("diện tích của hình chữ nhật là: " + dienTich);
 		
 		int canhNho = Math.min(chieuDai, chieuRong);
-		System.out.println("canh nhỏ nhất la" + canhNho);
+		System.out.println("cạnh nhỏ nhất là cạnh có độ dài bằng " + canhNho);
 	}
 
 }
