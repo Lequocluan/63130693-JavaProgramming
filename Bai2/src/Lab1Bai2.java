@@ -26,6 +26,9 @@ public class Lab1Bai2 {
         
 		System.out.println("chu vi hinh chu nhat la " + chuVi);
 		System.out.println("dien tich hinh chu nhat la " + dienTich);
+		
+		int canhNho = Math.min(chieuDai, chieuRong);
+		System.out.println("canh nhỏ nhất la" + canhNho);
 	}
 
 }
