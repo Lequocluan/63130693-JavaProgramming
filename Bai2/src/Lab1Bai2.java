@@ -20,7 +20,12 @@ public class Lab1Bai2 {
 		int chieuDai=scanner.nextInt();
 		System.out.print("nhap chieu rong: ");
 		int chieuRong=scanner.nextInt();
-		System.out.printf("chu vi hinh chu nhat la %d",(chieuDai+chieuRong)*2);
+		//tinh chu vi va dien tich rieng
+		int chuVi = (chieuDai + chieuRong) * 2;
+        int dienTich = chieuDai * chieuRong;
+        
+		System.out.println("chu vi hinh chu nhat la " + (chieuDai+chieuRong)*2);
+		System.out.println("dien tich hinh chu nhat la " + chieuDai*chieuRong);
 	}
 
 }
