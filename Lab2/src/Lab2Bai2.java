@@ -35,6 +35,11 @@ public class Lab2Bai2 {
 			}
 		}
 		else {
+			double delta = Math.pow(b, 2)-4*a*c;
+			if(delta<0) {
+				System.out.println("phuong trinh vo nghiem");
+			}else {
+			}
 		}
 	}
 
