@@ -39,6 +39,11 @@ public class Lab2Bai2 {
 			if(delta<0) {
 				System.out.println("phuong trinh vo nghiem");
 			}else {
+				if(delta==0) {
+					System.out.println("phuong trinh co nghiem kep x =" + -b/(2*a));
+				}else {
+					System.out.println("phuong trinh co nghiem X1 = " + (-b+Math.sqrt(delta))/(2*a)+ " X2 = " + (-b-Math.sqrt(delta))/(2*a));
+				}
 			}
 		}
 	}
