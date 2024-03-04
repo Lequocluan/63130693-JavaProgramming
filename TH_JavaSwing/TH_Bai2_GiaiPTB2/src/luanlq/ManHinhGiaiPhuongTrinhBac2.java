@@ -14,10 +14,10 @@ public class ManHinhGiaiPhuongTrinhBac2 extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
-	private JTextField textField;
-	private JTextField textField_1;
-	private JTextField textField_2;
-	private JTextField textField_3;
+	private JTextField txtA;
+	private JTextField txtB;
+	private JTextField txtC;
+	private JTextField txtKQ;
 
 	/**
 	 * Create the frame.
@@ -32,51 +32,51 @@ public class ManHinhGiaiPhuongTrinhBac2 extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblNewLabel_2 = new JLabel("Hệ số c");
-		lblNewLabel_2.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		lblNewLabel_2.setBounds(122, 145, 70, 17);
-		contentPane.add(lblNewLabel_2);
+		JLabel lblC = new JLabel("Hệ số c");
+		lblC.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblC.setBounds(122, 145, 70, 17);
+		contentPane.add(lblC);
 		
-		JLabel lblNewLabel_1 = new JLabel("Hệ số b");
-		lblNewLabel_1.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		lblNewLabel_1.setBounds(122, 100, 56, 17);
-		contentPane.add(lblNewLabel_1);
+		JLabel lblB = new JLabel("Hệ số b");
+		lblB.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblB.setBounds(122, 100, 56, 17);
+		contentPane.add(lblB);
 		
-		JLabel lblNewLabel = new JLabel("Hệ số a");
-		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		lblNewLabel.setBounds(122, 52, 56, 20);
-		contentPane.add(lblNewLabel);
+		JLabel lblA = new JLabel("Hệ số a");
+		lblA.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblA.setBounds(122, 52, 56, 20);
+		contentPane.add(lblA);
 		
-		textField = new JTextField();
-		textField.setBounds(299, 52, 165, 20);
-		contentPane.add(textField);
-		textField.setColumns(10);
+		txtA = new JTextField();
+		txtA.setBounds(299, 52, 165, 20);
+		contentPane.add(txtA);
+		txtA.setColumns(10);
 		
-		textField_1 = new JTextField();
-		textField_1.setBounds(299, 98, 165, 20);
-		contentPane.add(textField_1);
-		textField_1.setColumns(10);
+		txtB = new JTextField();
+		txtB.setBounds(299, 98, 165, 20);
+		contentPane.add(txtB);
+		txtB.setColumns(10);
 		
-		textField_2 = new JTextField();
-		textField_2.setBounds(299, 143, 165, 20);
-		contentPane.add(textField_2);
-		textField_2.setColumns(10);
+		txtC = new JTextField();
+		txtC.setBounds(299, 143, 165, 20);
+		contentPane.add(txtC);
+		txtC.setColumns(10);
 		
-		JButton btnNewButton = new JButton("GIẢI");
-		btnNewButton.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		btnNewButton.setBounds(241, 188, 89, 33);
-		contentPane.add(btnNewButton);
+		JButton btnGiai = new JButton("GIẢI");
+		btnGiai.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		btnGiai.setBounds(241, 188, 89, 33);
+		contentPane.add(btnGiai);
 		
-		JLabel lblNewLabel_3 = new JLabel("Kết quả");
-		lblNewLabel_3.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		lblNewLabel_3.setBounds(122, 246, 70, 14);
-		contentPane.add(lblNewLabel_3);
+		JLabel lblKQ = new JLabel("Kết quả");
+		lblKQ.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblKQ.setBounds(122, 246, 70, 14);
+		contentPane.add(lblKQ);
 		
-		textField_3 = new JTextField();
-		textField_3.setEnabled(false);
-		textField_3.setBounds(213, 232, 263, 33);
-		contentPane.add(textField_3);
-		textField_3.setColumns(10);
+		txtKQ = new JTextField();
+		txtKQ.setEnabled(false);
+		txtKQ.setBounds(213, 232, 263, 33);
+		contentPane.add(txtKQ);
+		txtKQ.setColumns(10);
 	}
 
 }
