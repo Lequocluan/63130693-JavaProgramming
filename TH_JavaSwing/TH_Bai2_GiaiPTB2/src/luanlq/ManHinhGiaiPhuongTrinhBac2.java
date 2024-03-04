@@ -9,6 +9,8 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 import javax.swing.JButton;
 import java.awt.Font;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class ManHinhGiaiPhuongTrinhBac2 extends JFrame {
 
@@ -63,6 +65,11 @@ public class ManHinhGiaiPhuongTrinhBac2 extends JFrame {
 		txtC.setColumns(10);
 		
 		JButton btnGiai = new JButton("GIẢI");
+		btnGiai.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				GiaiPTB2();
+			}
+		});
 		btnGiai.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		btnGiai.setBounds(241, 188, 89, 33);
 		contentPane.add(btnGiai);
@@ -78,5 +85,22 @@ public class ManHinhGiaiPhuongTrinhBac2 extends JFrame {
 		contentPane.add(txtKQ);
 		txtKQ.setColumns(10);
 	}
+	void GiaiPTB2() {
+		double a = Double.parseDouble(txtA.getText());
+        double b = Double.parseDouble(txtB.getText());
+        double c = Double.parseDouble(txtC.getText());
 
+        double delta = b * b - 4 * a * c;
+
+        if (delta > 0) {
+            double x1 = (-b + Math.sqrt(delta)) / (2 * a);
+            double x2 = (-b - Math.sqrt(delta)) / (2 * a);
+            txtKQ.setText("x1 = " + x1 + ", x2 = " + x2);
+        } else if (delta == 0) {
+            double x = -b / (2 * a);
+            txtKQ.setText("x1 = x2 = " + x);
+        } else {
+            txtKQ.setText("Phương trình vô nghiệm");
+        }
+	}
 }
